@@ -1,0 +1,90 @@
+.pageTitle {
+  font-family: var(--font-head);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: -0.3px;
+  margin-bottom: 4px;
+}
+.pageSub {
+  font-size: 13px;
+  color: var(--muted);
+  margin-bottom: 32px;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-bottom: 40px;
+}
+
+.statCard {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  padding: 20px 22px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  transition: border-color 0.15s;
+}
+.statCard:hover { border-color: var(--accent); }
+
+.statValue {
+  font-family: var(--font-head);
+  font-size: 36px;
+  font-weight: 700;
+  color: var(--text);
+  line-height: 1;
+}
+.statLabel {
+  font-family: var(--font-head);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--soft);
+}
+.statDesc {
+  font-size: 11px;
+  color: var(--muted);
+}
+
+.sectionTitle {
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 12px;
+}
+
+.actionGrid {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.actionBtn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+.actionBtn:hover { background: var(--accent-h); }
+
+.actionBtnGhost {
+  background: transparent;
+  color: var(--soft);
+  border: 1px solid var(--rule);
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 500;
+  transition: color 0.15s, border-color 0.15s;
+}
+.actionBtnGhost:hover { color: var(--text); border-color: var(--muted); }

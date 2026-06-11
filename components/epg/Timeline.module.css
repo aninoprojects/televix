@@ -1,0 +1,132 @@
+.timeline {
+  border-left: 1px solid var(--rule);
+  overflow-y: auto;
+  background: var(--surface);
+  display: flex;
+  flex-direction: column;
+  scrollbar-width: thin;
+  scrollbar-color: var(--rule) transparent;
+}
+
+.head {
+  padding: 13px 18px 11px;
+  border-bottom: 1px solid var(--rule);
+  position: sticky;
+  top: 0;
+  background: var(--surface);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.numBadge {
+  background: var(--accent);
+  color: white;
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 3px;
+  flex-shrink: 0;
+}
+
+.chName {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  flex: 1;
+}
+
+.date {
+  font-family: var(--font-head);
+  font-size: 10px;
+  color: var(--muted);
+}
+
+.items { padding: 6px 0; }
+
+.empty {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.7;
+  padding: 28px 18px;
+  text-align: center;
+}
+.empty a { color: var(--accent); }
+
+.item {
+  display: grid;
+  grid-template-columns: 54px 1fr;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(39, 39, 48, 0.6);
+  position: relative;
+  transition: background 0.1s;
+}
+.item:hover { background: rgba(255, 255, 255, 0.025); }
+
+.activeItem { background: var(--accent-dim); }
+.activeItem::before {
+  content: '';
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 2px;
+  background: var(--accent);
+}
+
+.timeCol {
+  padding: 14px 0 12px 16px;
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 500;
+  color: var(--muted);
+  letter-spacing: 0.2px;
+  line-height: 1;
+}
+
+.showCol { padding: 10px 16px 10px 0; }
+
+.title {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text);
+  line-height: 1.35;
+  margin-bottom: 3px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.activeItem .title { color: #fff; }
+
+.nowTag {
+  background: var(--accent);
+  color: white;
+  font-family: var(--font-head);
+  font-size: 8px;
+  font-weight: 700;
+  padding: 1px 5px;
+  border-radius: 2px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+}
+
+.sub {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.genre {
+  font-size: 10px;
+  color: var(--accent);
+  font-family: var(--font-head);
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.notes {
+  font-size: 10px;
+  color: var(--muted);
+}

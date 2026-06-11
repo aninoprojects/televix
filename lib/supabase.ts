@@ -4,7 +4,6 @@
 //   createServerClient() — server components & route handlers (uses cookies)
 
 import { createBrowserClient, createServerClient as createSSRClient } from '@supabase/ssr'
-import { cookies } from 'next/headers'
 import type { Channel, Show, Schedule, ScheduleWithShow } from '@/types/database'
 
 // ── Browser client (use in Client Components) ─────────────────
@@ -17,6 +16,7 @@ export function createClient() {
 
 // ── Server client (use in Server Components & API routes) ─────
 export async function createServerClient() {
+  const { cookies } = await import('next/headers')
   const cookieStore = await cookies()
   return createSSRClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,

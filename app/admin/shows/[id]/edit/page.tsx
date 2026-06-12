@@ -5,11 +5,11 @@ import type { Show, Channel } from '@/types/database'
 
 export const metadata = { title: 'Edit Show — Televix Admin' }
 
-export default async function EditShowPage({ params }: { params: { id: string } }) {
+export default async function EditShowPage({ params }: { params: Promise<{ id: string }> }) {
   const supabase = await createServerClient()
-
+  const { id } = await params  // add this line
   const [{ data: show }, { data: channels }] = await Promise.all([
-    supabase.from('shows').select('*').eq('id', params.id).single(),
+    supabase.from('shows').select('*').eq('id', id).single(),  // params.id → id
     supabase.from('channels').select('*').eq('is_active', true).order('sort_order'),
   ])
 

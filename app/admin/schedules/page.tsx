@@ -1,5 +1,5 @@
 import { createServerClient } from '@/lib/supabase'
-import styles from '../crud.module.css'
+import styles from '../../crud.module.css'
 
 export const metadata = { title: 'Schedules — Televix Admin' }
 

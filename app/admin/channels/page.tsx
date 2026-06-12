@@ -1,6 +1,6 @@
 import { createServerClient } from '@/lib/supabase'
 import type { Channel } from '@/types/database'
-import styles from '../crud.module.css'
+import styles from '../../crud.module.css'
 
 export const metadata = { title: 'Channels — Televix Admin' }
 

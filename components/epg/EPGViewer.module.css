@@ -32,6 +32,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  gap: 14px;
 }
 
 .aboutLink {
@@ -44,6 +45,23 @@
   transition: color 0.15s;
 }
 .aboutLink:hover { color: var(--text); }
+
+.loginBtn {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  border: 1px solid rgba(124, 92, 252, 0.35);
+  border-radius: 4px;
+  padding: 4px 10px;
+  transition: background 0.15s, border-color 0.15s;
+}
+.loginBtn:hover {
+  background: var(--accent-dim);
+  border-color: var(--accent);
+}
 
 /* ── Subheader ── */
 .subheader {

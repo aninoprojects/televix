@@ -1,0 +1,132 @@
+.page {
+  min-height: 100vh;
+  background: var(--bg);
+  display: flex;
+  justify-content: center;
+  padding: 48px 24px;
+  overflow-y: auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 580px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.back {
+  font-family: var(--font-head);
+  font-size: 12px;
+  color: var(--muted);
+  transition: color 0.15s;
+  align-self: flex-start;
+}
+.back:hover { color: var(--soft); }
+
+.logo {
+  font-family: var(--font-head);
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  color: var(--text);
+}
+.logo span { color: var(--accent); }
+
+.tagline {
+  font-family: var(--font-head);
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--soft);
+  margin-top: -20px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.sectionTitle {
+  font-family: var(--font-head);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.body {
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--soft);
+  line-height: 1.75;
+}
+
+.bodySmall {
+  font-size: 12px;
+  color: var(--muted);
+  margin-top: 4px;
+}
+
+.channelGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.channelTag {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.chNum {
+  background: var(--accent);
+  color: white;
+  font-family: var(--font-head);
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 3px;
+}
+
+.chName {
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text);
+}
+
+.stackRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.stackTag {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 5px;
+  padding: 4px 12px;
+  font-family: var(--font-head);
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--soft);
+}
+
+.divider {
+  height: 1px;
+  background: var(--rule);
+}
+
+.footer {
+  font-size: 12px;
+  color: var(--muted);
+  line-height: 1.6;
+  padding-bottom: 24px;
+}

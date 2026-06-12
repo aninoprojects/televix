@@ -76,6 +76,7 @@ export default function EPGViewer({ channels, initialChannel, initialSchedules }
 
         <div className={styles.headerRight}>
           <a href="/about" className={styles.aboutLink}>About</a>
+          <a href="/admin/login" className={styles.loginBtn}>Login</a>
         </div>
       </header>
 

@@ -4,7 +4,7 @@ import { useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { createClient } from '@/lib/supabase'
 import type { Schedule, Show, Channel } from '@/types/database'
-import styles from '../../crud.module.css'
+import styles from '../crud.module.css'
 
 interface Props {
   schedule?: Schedule
